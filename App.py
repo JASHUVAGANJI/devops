@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Welcome to the Flask App! Go to /register to register."
+    return "Welcome to the  updated Flask App! Go to /register to register."
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -14,7 +14,6 @@ def register():
         email = request.form['email']
         password = request.form['password']
         confirmPassword = request.form['confirmPassword']
-        
         # You can add validation or save data here
         
         # For now, we are just sending the username to the success page
